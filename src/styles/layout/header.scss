@@ -1,20 +1,33 @@
+header {
+    font-size: 13px;
+}
+
 .header{
     &__top-bar{
         font-weight: bold;
-        height: 50px;
+        height: 40px;
+        width: 100%;
         display: flex;
-        background-color: violet;
+        padding-left: 50px;
+        border-bottom: 1px solid #f2f2f2;
     }
 
     &__contact {
         display: flex;
+        align-items: center;
+        flex-grow: 1;
         &-item{
-            display: flex;
+            margin-right: 40px;
         }
     }
 
     &__pedidos {
         display: flex;
+        align-items: center;
+        margin-right: 65px;
+        & a{
+            margin-left: 10px;
+        }
     }
 
     &__contact-item b, &__pedidos b {
@@ -24,32 +37,85 @@
 
     &__center{
         display: flex;
-        height: 60px;
-        background-color: rgb(146, 130, 238);
+        align-items: center;
+        height: 120px;
+        width: 95%;
+        font-size: 13px;
+        justify-content: flex-end;
         &-logo{
-            height: 100%;
             & img {
-                height: 100%;
+                width: 220px;
             }
         }
         &-search{
-            display: block;
-            width: 70%;
-            height: 100%;  
-        }
-        &-login{
+            height: 50px;
+            width: 570px;
             display: flex;
+            align-items: center;
+            border: 2px solid #f2f2f2;
+            border-radius: 3px;
+            margin-left: 45px;
+            & input{
+                height: 90%;
+                width: 94%;
+                border: none;
+                padding-left: 15px;
+                font-weight: bold;
+                color: black;
+            }
+            & div{
+                width: 25px;
+            }
+            &-icon{
+                fill: #0bb500;
+            }
+        }
+
+        &-login{
+            height: 30px;
+            width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 60px;
+            &-icon{
+                fill: #0bb500;
+                width: 25px;
+            }
+        }
+        &-carrinho{
+            height: 60px;
+            width: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid #f2f2f2;
+            margin-left: 30px;
+            &-icon{
+                fill: #0bb500;
+                width: 25px;
+            }
         }
         
     }
     &__navbar{
-        background-color: rgb(223, 238, 159);
-        height: 65px;
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        &-item{
-            display: ;
+        height: 55px;
+        background-color: #f2f2f2;
+        
+        & ul{
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            
+        }
+       &-item{
+            height: 100%;
+            font-weight: bold;
+            color: #545956;
+            border-right: 1px solid #e1e7e4;
+            padding: 15px 25px 0px;    
         }
     }
 }
