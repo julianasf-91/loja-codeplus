@@ -1,0 +1,55 @@
+.header{
+    &__top-bar{
+        font-weight: bold;
+        height: 50px;
+        display: flex;
+        background-color: violet;
+    }
+
+    &__contact {
+        display: flex;
+        &-item{
+            display: flex;
+        }
+    }
+
+    &__pedidos {
+        display: flex;
+    }
+
+    &__contact-item b, &__pedidos b {
+        color:#0bb500;
+        font-weight: 900;
+    }
+
+    &__center{
+        display: flex;
+        height: 60px;
+        background-color: rgb(146, 130, 238);
+        &-logo{
+            height: 100%;
+            & img {
+                height: 100%;
+            }
+        }
+        &-search{
+            display: block;
+            width: 70%;
+            height: 100%;  
+        }
+        &-login{
+            display: flex;
+        }
+        
+    }
+    &__navbar{
+        background-color: rgb(223, 238, 159);
+        height: 65px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        &-item{
+            display: ;
+        }
+    }
+}
