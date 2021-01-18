@@ -1,0 +1,55 @@
+footer {
+    font-size: 13px; 
+}
+
+.footer{
+    &__informacoes{
+        background-color: rgb(189, 118, 25);
+        width: 100%;
+        padding: 20px 50px;
+        &-title{
+            color: #0bb500;
+            padding-bottom: 15px;
+        }
+        &-subtitle{
+            padding-bottom: 15px;
+        }
+    }&__adendo{
+        background-color: aqua;
+        display: flex;
+        width: 100%;
+        padding: 20px 50px;
+    }&__sobre{
+        background-color: violet;
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        &-social{
+            display: flex;
+            &-icon{
+                width: 30px;
+            }
+        }
+    }&__seguranca{
+        &-web{
+            display: flex;
+        }
+    }&__bandeiras{
+        display: flex;
+        width: 100%;
+        padding: 20px 50px;
+        &-cartoes{
+            display: flex; 
+            
+        }
+    }&__copyright{
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        &-img{
+           width: 50px;
+        }
+    }
+}
