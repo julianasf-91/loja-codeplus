@@ -1,55 +1,113 @@
 footer {
-    font-size: 13px; 
+    max-width: 1300px;
+    margin: 0 auto;
+    font-size: 15px; 
+    background-color: #f9f9f9;
 }
 
 .footer{
     &__informacoes{
-        background-color: rgb(189, 118, 25);
         width: 100%;
         padding: 20px 50px;
+        border-bottom: 1px solid #e1e7e4;
         &-title{
             color: #0bb500;
             padding-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 900;
         }
         &-subtitle{
             padding-bottom: 15px;
+            font-size: 1rem;
+            font-weight: bolder;
         }
     }&__adendo{
-        background-color: aqua;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         padding: 20px 50px;
+        border-bottom: 1px solid #e1e7e4;
+        & p{
+            font-weight: bold;
+        }
+        &-logo img{
+            width: 220px;
+        }
     }&__sobre{
-        background-color: violet;
         width: 100%;
-        padding: 20px 50px;
+        padding: 25px 50px;
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 0.8rem;
+        font-weight: bold;
+        & span {
+            color: gray;
+        }
+        & h2{
+            font-size: 1rem;
+            color: #0bb500;
+            margin-bottom: 10px;
+        }
+        & p{
+            margin-bottom: 25px;
+        }
+        &-rede-social{
+            margin-top: 20px;
+        }
         &-social{
             display: flex;
             &-icon{
                 width: 30px;
+                margin-right: 5px;
             }
         }
     }&__seguranca{
+        width: 22%;
         &-web{
             display: flex;
+            align-items: center;
         }
+        &-vtex img{
+            width: 90px;
+        }
+        &-lets{
+            & img{
+                margin-left: 15px;
+                width: 100px;  
+                fill: blue;
+            }
+        } 
+        
     }&__bandeiras{
         display: flex;
         width: 100%;
         padding: 20px 50px;
+        font-size: 0.6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #e1e7e4;
+        border-top: 1px solid #e1e7e4;
         &-cartoes{
-            display: flex; 
+            display: flex;
             
+        }
+        &-icon{
+            margin-left: 5px;
         }
     }&__copyright{
         width: 100%;
         padding: 20px 50px;
         display: flex;
         justify-content: center;
-        height: 100px;
-        &-img{
-           width: 50px;
+        &-eplus img{
+           height: 25px;
+        }
+        &-vtex img{
+            height: 25px;
+            margin-left: 10px;
         }
     }
 }

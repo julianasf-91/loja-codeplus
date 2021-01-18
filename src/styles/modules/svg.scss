@@ -2,7 +2,8 @@
     & svg {
         width: $width;
         height: $height;
-        & path {
+        margin: $margin;
+        & path, circle {
             fill: $color;
         }
     }
