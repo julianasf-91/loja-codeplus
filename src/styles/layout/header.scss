@@ -102,17 +102,15 @@ header {
     }
     &__navbar{
         height: 55px;
-        background-color: #f2f2f2;
-        
-        & ul{
-            height: 100%;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            
-        }
-       &-item{
+        background-color: #f2f2f2;  
+    }
+    &__categorias{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        &-item{
             height: 100%;
             font-weight: bold;
             color: #545956;

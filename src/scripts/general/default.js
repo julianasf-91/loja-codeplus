@@ -1,6 +1,17 @@
+const menu = require('../modules/menu')
+
 const Default = {
     init: function () {
-        console.log('testeeee')
+       Default.menuInit() 
+    },
+
+    menuInit: () => {
+        const menuConfig = {
+            mainClass: '.header__categorias',
+            tree: 3    
+        }
+
+        menu.init(menuConfig)
     }
 }
 
